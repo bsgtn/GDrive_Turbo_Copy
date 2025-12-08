@@ -28,10 +28,11 @@
 | Tính năng | Mô tả |
 |:---|:---|
 | ♾️ **Không giới hạn** | Copy 100GB, 1TB, 10TB+ - không giới hạn dung lượng |
-| ⚡ **Siêu nhanh** | Copy trực tiếp trên server Google, tốc độ 20-100 MB/s |
-| 🔄 **Tự động resume** | Timeout? Chạy lại là tự tiếp tục, không mất tiến độ |
-| 💾 **Checkpoint thông minh** | Lưu tiến độ mỗi 10 file + backup tự động |
-| 🛡️ **An toàn tuyệt đối** | Chỉ copy, không xóa - file gốc luôn nguyên vẹn |
+| 🚀 **TURBO MODE** | Cache thông minh, giảm 50% API calls, tốc độ 50-150 MB/s |
+| ⚡ **Server-side** | Copy trực tiếp trên server Google, không qua máy bạn |
+| 🔄 **Auto resume** | Timeout? Chạy lại là tự tiếp tục, không mất tiến độ |
+| 💾 **Smart checkpoint** | Lưu tiến độ tự động + backup |
+| 🛡️ **An toàn** | Chỉ copy, không xóa - file gốc luôn nguyên vẹn |
 
 ---
 
@@ -41,9 +42,10 @@
 |:---:|:---|:---|
 | ♾️ | Unlimited Copy | Không giới hạn dung lượng - copy bao nhiêu cũng được |
 | ⚡ | Server-side Copy | Copy trực tiếp trên server, không qua máy bạn |
+| 🚀 | TURBO MODE | Cache thông minh, giảm 50% API calls |
 | 🔄 | Auto Resume | Tự động tiếp tục khi timeout hoặc lỗi |
-| 💾 | Smart Checkpoint | Lưu tiến độ mỗi 10 file + backup |
-| 🔁 | Auto Retry | Tự động retry 5 lần với exponential backoff |
+| 💾 | Smart Checkpoint | Lưu tiến độ tự động + backup |
+| 🔁 | Auto Retry | Tự động retry với exponential backoff |
 | 📊 | Real-time Stats | Hiển thị số file, dung lượng, tốc độ, thời gian |
 | 🎯 | Exact Match | Kiểm tra file trùng chính xác 100% |
 | 🔍 | Smart Filter | Lọc theo tên file, đuôi file linh hoạt |
@@ -147,7 +149,7 @@ Chạy **Cell 2** và đợi hoàn tất.
 <details>
 <summary><strong>Tốc độ copy bao nhiêu?</strong></summary>
 
-Tùy thuộc Google API và thời điểm, trung bình **20-100 MB/s**. Ban đêm thường nhanh hơn.
+Với TURBO MODE, tốc độ trung bình **50-150 MB/s** (tùy Google API). Ban đêm thường nhanh hơn.
 </details>
 
 <details>
@@ -179,9 +181,10 @@ Tool tự động retry 5 lần với exponential backoff. Nếu vẫn lỗi, đ
 ### v1.0
 - ♾️ Copy không giới hạn dung lượng
 - ⚡ Server-side copy siêu nhanh
+- 🚀 **TURBO MODE** - Cache thông minh, giảm 50% API calls
 - 🔄 Auto resume khi timeout
 - 💾 Checkpoint + backup thông minh
-- 🔁 Auto retry 5 lần
+- 🔁 Auto retry với exponential backoff
 - 📊 Real-time stats
 - 📄 Export Google Docs sang PDF
 - 🔗 Shortcut detection
